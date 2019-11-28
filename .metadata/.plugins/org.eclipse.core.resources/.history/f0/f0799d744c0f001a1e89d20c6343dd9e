@@ -1,0 +1,5 @@
+package com.ustglobal.mobileapp.util;
+
+public class MobileFactory {
+	
+}

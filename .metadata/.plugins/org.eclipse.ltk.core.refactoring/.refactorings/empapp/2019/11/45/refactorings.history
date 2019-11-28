@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ustglobal.empdao&apos; to &apos;com.ustglobal.emp.dao&apos;&#x0D;&#x0A;- Original project: &apos;empapp&apos;&#x0D;&#x0A;- Original element: &apos;empapp/src/com.ustglobal.empdao&apos;&#x0D;&#x0A;- Renamed element: &apos;empapp/src/com.ustglobal.emp.dao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ustglobal.empdao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.ustglobal.empdao" name="com.ustglobal.emp.dao" qualified="false" references="true" stamp="1573205325453" textual="false" version="1.0"/>
+</session>

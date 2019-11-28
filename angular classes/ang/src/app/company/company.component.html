@@ -1,0 +1,39 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="companyData(form)">
+        <h1 class="text-center bg-primary text-white">Company Details</h1>
+        <div class="form-group">
+            <input type="text" name="company" id="company" class="form-control" placeholder="Enter Company Name..." #company="ngModel" ngModel required>
+            <div *ngIf="company.touched && company.invalid">
+                <p class="alert alert-danger" *ngIf="company.errors.required">*this field is required</p>
+    
+            </div>
+        </div>
+        <!-- <div class="dropdown-content">
+            input
+        </div> -->
+        <div class="form-group">
+            <input type="text" name="experience" id="experience" class="form-control" placeholder="Enter year of experience..." #experience="ngModel" ngModel required>
+            <div *ngIf ="experience.touched && experience.invalid">
+                <p class="alert alert-danger" *ngIf="experience.errors.required">*this field is required</p>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="mctc" id="mctc" class="form-control" placeholder="MCTC..." #mctc="ngModel" ngModel required>
+            <div *ngIf ="mctc.touched && mctc.invalid">
+                <p class="alert alert-danger" *ngIf="mctc.errors.required">*this field is required</p>
+                        
+            </div>
+        </div>
+        <div class="form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="Location..." #location="ngModel" ngModel required>
+                <div *ngIf ="location.touched && location.invalid">
+                    <p class="alert alert-danger" *ngIf="location.errors.required">*this field is required</p>
+                            
+                </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled] = "form.invalid">Add Requirement</button>
+        </div>
+</form>
+    
+

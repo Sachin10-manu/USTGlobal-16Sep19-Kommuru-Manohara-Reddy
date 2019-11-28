@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addArray(arr)
+        {
+
+            var additionOfArray = 0;
+            for(var i in arr)
+            {
+                additionOfArray += arr[i];
+            }
+                console.log('addition of array = ',additionOfArray);
+        }
+        var arr=[10,20,30,40,50,];
+        addArray(arr);
+
+        var value=function (arr)
+        {
+            var additionOfArray=0;
+            for(var i in arr)
+            {
+                additionOfArray+=arr[i];
+            }
+            return additionOfArray;
+        }       
+        var addval=value(arr);
+        console.log('addition of array=',addval);
+
+    </script>
+</body>
+</html>

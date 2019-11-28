@@ -1,0 +1,5 @@
+package com.ustglobal.jpawithhibernateapp1.onetomany;
+
+public class PencilBox {
+
+}

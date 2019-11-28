@@ -1,0 +1,60 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="userData(form)">
+        <h1 class="text-center bg-primary text-white">User Details</h1>
+        <div class="form-group">
+            <input type="text" name="username" id="username" class="form-control" placeholder="Enter User Name..." #user="ngModel" ngModel required>
+            <div *ngIf="user.touched && user.invalid">
+                <p class="alert alert-danger" *ngIf="user.errors.required">*this field is required</p>
+    
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="userage" id="userage" class="form-control" placeholder="Enter User age..." #age="ngModel" ngModel required>
+            <div *ngIf ="age.touched && age.invalid">
+                <p class="alert alert-danger" *ngIf="age.errors.required">*this field is required</p>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <h6>Gender</h6>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="choice1">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="choice2">Female</label>
+            <input type="radio" name="gender" id="others">
+            <label for="choice3">Others</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email..." #email="ngModel" ngModel required>
+            <div *ngIf ="email.touched && email.invalid">
+                <p class="alert alert-danger" *ngIf="email.errors.required">*this field is required</p>
+                        
+            </div>
+        </div>
+        <div class="form-group">
+                <input type="text" name="contact" id="contact" class="form-control" placeholder="User ContactNo..." #contact="ngModel" ngModel required>
+                <div *ngIf ="contact.touched && contact.invalid">
+                    <p class="alert alert-danger" *ngIf="contact.errors.required">*this field is required</p>
+                            
+                </div>
+            </div>
+        <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password..." #password="ngModel" ngModel required>
+                <div *ngIf ="password.touched && password.invalid">
+                    <p class="alert alert-danger" *ngIf="password.errors.required">*this field is required</p>
+                        
+                </div>
+        </div>
+        <div class="form-group">
+                <input type="re-password" name="re-password" id="re-password" class="form-control" placeholder="Retype- Password..." #repassword="ngModel" ngModel required>
+                <div *ngIf ="repassword.touched && repassword.invalid">
+                    <p class="alert alert-danger" *ngIf="repassword.errors.required">*this field is required</p>
+                    
+                </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled] = "form.invalid">Add User</button>
+        </div>
+</form>
+    
+
+

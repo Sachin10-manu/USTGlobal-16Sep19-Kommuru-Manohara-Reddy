@@ -1,0 +1,28 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="productData(form)">
+        <h1 class="text-center bg-success text-white">Product</h1>
+        <div class="form-group">
+            <input type="text" name="product" id="product" class="form-control" placeholder="Enter Product Name..." #product="ngModel" ngModel required>
+            <div *ngIf="product.touched && product.invalid">
+                <p class="alert alert-danger" *ngIf="product.errors.required">*this field is required</p>
+    
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="productprice" id="productprice" class="form-control" placeholder="Enter Product Price..." #productprice="ngModel" ngModel required>
+            <div *ngIf ="productprice.touched && productprice.invalid">
+                <p class="alert alert-danger" *ngIf="productprice.errors.required">*this field is required</p>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="productdescription" id="productdescription" class="form-control" placeholder="Enter Product Description..." #productdescription="ngModel" ngModel required>
+            <div *ngIf ="productdescription.touched && productdescription.invalid">
+                <p class="alert alert-danger" *ngIf="productdescription.errors.required">*this field is required</p>
+                        
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled] = "form.invalid">Add Product</button>
+        </div>
+</form>
+    

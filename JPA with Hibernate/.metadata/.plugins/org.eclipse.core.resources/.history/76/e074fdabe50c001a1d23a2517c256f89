@@ -1,0 +1,14 @@
+package com.ustglobal.jpawithhibernateapp1.onetoone;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Person {
+	
+	private int id;
+	
+	private String name;
+	
+	private VoterCard votercard;
+	
+}

@@ -1,0 +1,8 @@
+package com.ustglobal.mobileapp.dto;
+
+public class Person {
+
+	public String name;
+	public long phonenumber;
+	public String groups;
+}

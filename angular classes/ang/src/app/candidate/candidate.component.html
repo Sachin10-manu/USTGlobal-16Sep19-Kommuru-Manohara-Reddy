@@ -1,0 +1,54 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="candidateData(form)">
+        <h1 class="text-center bg-primary text-white">Candidate Details</h1>
+        <div class="form-group">
+            <input type="text" name="candidatename" id="candidatename" class="form-control" placeholder="Enter Candidate Name..." #candidate="ngModel" ngModel required>
+            <div *ngIf="candidate.touched && candidate.invalid">
+                <p class="alert alert-danger" *ngIf="candidate.errors.required">*this field is required</p>
+    
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="experience" id="experience" class="form-control" placeholder="Year of Experience..." #experience="ngModel" ngModel required>
+            <div *ngIf ="experience.touched && experience.invalid">
+                <p class="alert alert-danger" *ngIf="experience.errors.required">*this field is required</p>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <h6>Skills</h6>
+            <input type="radio" name="skills" id="Java">
+            <label for="choice1">Java</label>
+            <input type="radio" name="skills" id="Angular">
+            <label for="choice2">Angular</label>
+            <input type="radio" name="skills" id="SQL">
+            <label for="choice3">SQL</label>
+            <input type="radio" name="skills" id="Spring">
+            <label for="choice3">Spring</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="cctc" id="cctc" class="form-control" placeholder="CCTC..." #cctc="ngModel" ngModel required>
+            <div *ngIf ="cctc.touched && cctc.invalid">
+                <p class="alert alert-danger" *ngIf="cctc.errors.required">*this field is required</p>
+                        
+            </div>
+        </div>
+        <div class="form-group">
+                <input type="text" name="ectc" id="ectc" class="form-control" placeholder="ECTC..." #ectct="ngModel" ngModel required>
+                <div *ngIf ="ectc.touched && ectc.invalid">
+                    <p class="alert alert-danger" *ngIf="ectc.errors.required">*this field is required</p>
+                            
+                </div>
+        </div>
+        <div class="form-group">
+            <h6>Ready to Relocate</h6>
+                <input type="checkbox" name="ReLocate" id="locate">Yes
+                <input type="checkbox" name="ReLocate" id="locate">No
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled] = "form.invalid">Add User</button>
+        </div>
+</form>
+    
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MobileApp&apos; to &apos;mobileapp&apos;" description="Rename resource &apos;MobileApp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MobileApp" name="mobileapp" stamp="1574662768452" updateReferences="true"/>
+</session>

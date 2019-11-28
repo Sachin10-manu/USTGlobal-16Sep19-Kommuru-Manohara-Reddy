@@ -1,0 +1,5 @@
+package com.ustglobal.mobileapp.dao;
+
+public class MobileDao {
+
+}

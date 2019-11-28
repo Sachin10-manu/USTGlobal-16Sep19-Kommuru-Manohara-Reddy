@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        var age=22;
+        console.log('Age = '+age);
+        var name='Chota Bheem';
+        console.log('Name = '+name);
+        var hasHobbies = true;
+        console.log('Has Hobbies = '+hasHobbies);
+        var data = null;
+        console.log('Data = '+data);
+        var married;
+        console.log('Married = '+married);
+    </script>
+    <script src="date.js">
+    </script>
+</head>
+<body>
+    <script>
+        var fruits = ['orange','Mango','Apple','Pineapple'];
+        console.log('Fruits = ',fruits);
+        console.log('Fruits = ',fruits[0]);
+        console.log('Fruits Length = ',fruits.length);
+
+        var person = {
+                        lastName : 'Bhatt',
+                        firstName : 'Alia',
+                        age : 26,
+                        phoneno : 9910020030,
+                        getFullName : function(){
+                            return this.firstName + ' ' + this.lastName
+                        }
+                    }
+            var lastName = person.lastName;
+            console.log('Last Name ',lastName);
+            var firstName = person.firstName;
+            console.log('first Name ',firstName);
+            var personAge = person.age;
+            console.log('Age ',personAge);
+            var fullName = person.getFullName();
+            console.log('FullName ',fullName);
+            console.log('==================================');
+
+            var a=10;
+            var str='10';
+            if(a!==str)
+            {
+                console.log('Equal');
+
+            }
+            else{
+                console.log('not equal');
+            }
+            console.log('==================================');
+
+            var numbervalue = 20;
+            console.log(typeof numbervalue);
+            var fname='Manu';
+            console.log(typeof fname);
+            var lname = null;
+            console.log(typeof lname);
+            var fullname;
+            console.log(typeof fullname);
+            console.log('==================================');
+
+    </script>
+</body>
+</html>

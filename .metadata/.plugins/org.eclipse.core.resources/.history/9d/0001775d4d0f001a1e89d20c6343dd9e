@@ -1,0 +1,42 @@
+package com.ustglobal.mobileapp;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.ustglobal.emp.dao.EmployeeDAO;
+import com.ustglobal.empapp.dto.EmployeeBean;
+import com.ustglobal.empapp.util.EmployeeFactory;
+import com.ustglobal.mobileapp.util.MobileFactory;
+
+public class Mobile {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt();
+		System.out.println("press 1 to show all contacts ");
+		System.out.println("press 2 to search for contacts ");
+		System.out.println("press 3 to operate on contact ");
+		
+		switch(m) {
+		case 1:
+			MobileDao impl = MobileFactory.getEmployeeDAO();
+			List<EmployeeBean> result =  impl.getAllEmployeeData();
+			
+			for(EmployeeBean bean : result) {
+				System.out.println("Id: "+bean.getId());
+				System.out.println("Name: "+bean.getName());
+				System.out.println("Salary: "+bean.getSal());
+				System.out.println("Gender: "+bean.getSal());
+				System.out.println("==========================");
+			}
+			
+			break;
+			
+		case 2:
+			
+			break;
+			
+		case 3:
+			break;
+	}
+}

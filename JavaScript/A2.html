@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function car(name,color,price,model,engine) 
+        {
+            this.name=name;
+            this.color=color;
+            this.price=price;
+            this.model=model;
+            this.engine=engine;
+        }
+        var car = new car('BMW','black',50,200,'crdi');
+        console.log(car);
+
+        var car = ['BMW','Audi','Skoda','Scorpio','ferrari']
+        for(var i=0;i<car.length;i++)
+        {
+            console.log(car[i]);
+        }
+
+        var car =['A','B','C','D','E'];
+        console.log('cars =',car);
+        console.log('cars =',car[0]);
+        console.log('cars =',car[1]);
+        console.log('cars =',car[2]);
+        console.log('cars =',car[3]);
+        console.log('cars =',car[4]);
+
+        var person = new Object();
+        person.fname ='Manu';
+        person.lname ='reddy';
+        person.age = 22;
+        person.gender = 'Male';
+        person.married;
+
+        console.log(person.fname);
+        console.log(person.lname);
+        console.log(person.age);
+        console.log(person.gender);
+        console.log(person.married);
+
+        
+    </script>
+</body>
+</html>
