@@ -1,0 +1,14 @@
+<div class="col-md-4 offset-md-4 mt-5">
+    <form #form="ngForm" (ngSubmit)="delete(form)">
+        <h1 class="text-center bg-dark text-white">Delete Product</h1>
+
+
+        <div class="form-group">
+                <input type="number" name="id" id="id" class="form-control" placeholder="Enter id"
+                    #id="ngModel" ngModel required>
+            </div>    
+        <div class="form-group">
+            <button type="submit" class="btn-outline-success float-right" [disabled]="form.invalid">Delete</button>
+        </div>
+    </form>
+</div>
